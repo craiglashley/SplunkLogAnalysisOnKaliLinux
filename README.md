@@ -25,3 +25,130 @@ After installing Splunk and configuring it to recognize the log files, various q
 
 This demonstrates the application of Splunk's powerful data analysis capabilities in a security-focused environment.
 
+## Steps
+
+<p align="center">
+Open Kali Linux
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Install the free version of Splunk from Splunk's official website 
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Install the .deb package using the following command:
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Start Splunk
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Download Buearu of Transportation Statistics and save at /home/kali/splunk_logs
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Open your web browser and navigate to http://localhost:8000 to access the Splunk web interface
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Log in with the credentials you created during installation.
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Go to Settings > Data Inputs
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Click on Files & Directories 
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Click on New Local File & Directory
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Add the directory where you placed your log files (/home/kali/splunk_logs) and select Next
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Set Source Type (I left default)
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Configure input settings (I left them default) and click Review
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Select Submit
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Verify file input has been created successfully and select Start Searching
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Verify data is showing
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Query 1: Count Unique Carriers (spl query) 
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
+
+<p align="center">
+Query 2: Filter by Region and Count Events (spl query) 
+</p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/af20b2d9-faa5-4bc3-84e6-a3d43969e914" alt="Open Kali Linux">
+</p>
