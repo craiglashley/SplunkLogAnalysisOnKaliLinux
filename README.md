@@ -2,8 +2,19 @@
 Splunk Log Analysis on Kali Linux
 
 ## Description
-The following will show the steps and screenshots I took to complete the project:
-
+The following will show the steps and screenshots I took to complete the project and the below queries
+```python
+source="/home/kali/splunk_logs/sample_logs.csv" | stats dc(UNIQUE_CARRIER) AS UniqueCarrierCount
+```
+```python
+source="/home/kali/splunk_logs/sample_logs.csv" REGION="your_region_value" | stats count AS EventCount
+```
+```python
+source="/home/kali/splunk_logs/sample_logs.csv" | timechart span=1h count AS EventCount
+```
+```python
+source="/home/kali/splunk_logs/sample_logs.csv" | stats avg(ARR_DELAY) AS AverageDelay BY UNIQUE_CARRIER
+```
 ## Languages
 - [Python](https://www.python.org/)
 
